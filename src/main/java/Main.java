@@ -10,7 +10,6 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Please enter a number: ");
-        // 3. Use the Scanner to read a line of text from the user.
         String userInput = input.nextLine();
 
         int numInput = Integer.parseInt(userInput);
