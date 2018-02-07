@@ -10,11 +10,17 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Enter a number to add to 1: ");
+        System.out.print("Enter a number: ");
 
-        int userNumber = scan.nextInt() + 1;
+        int userNumber = scan.nextInt();
 
-        System.out.println("Your total is: " + userNumber);
+        int total = 0;
+
+        for (int i = 0; i <= userNumber; i++) {
+            total += i;
+        }
+
+        System.out.println("Your total is: " + total);
 
     }
 }
