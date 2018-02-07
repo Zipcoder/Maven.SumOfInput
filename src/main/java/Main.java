@@ -11,7 +11,7 @@ public class Main {
 
         int sumOfIn = 0;
 
-        System.out.println("Please enter a number.");
+        System.out.println("Please enter a number: ");
         int n = in.nextInt();
 
         while (n > 0) {
