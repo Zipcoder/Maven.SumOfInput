@@ -15,9 +15,10 @@ public class Main {
         for (int i = 0; i <= userNum; i++) {
 
             sumNum += i;
-            System.out.println(sumNum);
 
         }
+
+        System.out.println("The sum from 1 to " + userNum + " is: " + sumNum);
 
     }
 
