@@ -9,16 +9,19 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Scanner makeMoney = new Scanner(System.in);
+        Scanner scannerS = new Scanner(System.in);
 
         try
         { System.out.println("Enter any number.");
 
-            int whatChaGot = makeMoney.nextInt();
-            boolean n = whatChaGot >= 0;
+            int userNumber = scannerS.nextInt();
 
-            if (n) {
-                System.out.println("Now you've got $" + (whatChaGot + 1) + " bro");
+            if (userNumber >= 1) {
+                int sum = 0;
+                for(int i = 1; i <= userNumber; i++){
+                    sum += i;
+                }
+                System.out.println("Now you've got $" + (sum) + " bro");
             } else {
                 System.out.println("Try a positive number.");
             }
