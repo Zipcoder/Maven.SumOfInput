@@ -16,12 +16,12 @@ public class Main {
     for(int i=0;i <=test; i++){
 
         result+=i;
-        System.out.println(result);
+
 
     }
 
 
-
+        System.out.println(result);
 
 
 
