@@ -12,6 +12,7 @@ public class Main {
 
     public static void promptUser(boolean firstPrompt) {
         Scanner input = new Scanner(System.in);
+        int result = 0;
 
         if(firstPrompt)
         {
@@ -27,9 +28,11 @@ public class Main {
 
             while(i <= n)
             {
-                System.out.println(i);
+                result += i;
                 i++;
             }
+
+            System.out.println(result);
         }
 
         else
