@@ -12,7 +12,6 @@ public class Main {
 
     public static void promptUser(boolean firstPrompt) {
         Scanner input = new Scanner(System.in);
-        int result = 0;
 
         if(firstPrompt)
         {
@@ -24,22 +23,27 @@ public class Main {
         if(isInteger(s))
         {
             int n = Integer.parseInt(s);
-            int i = 1;
-
-            while(i <= n)
-            {
-                result += i;
-                i++;
-            }
-
+            int result = getSum(n);
             System.out.println(result);
         }
-
         else
         {
             System.out.println("Please enter an integer");
             promptUser(false);
         }
+    }
+
+    public static int getSum(int n) {
+        int i = 1;
+        int result = 0;
+
+        while(i <= n)
+        {
+            result += i;
+            i++;
+        }
+
+        return result;
     }
 
     public static boolean isInteger(String s) {
